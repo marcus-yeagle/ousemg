@@ -1,0 +1,110 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block content %}
+
+<div id="page-wrapper">
+
+	{% include 'home-header.html' %}
+
+	<!-- Banner -->
+		<section id="banner">
+			<img id="banner-logo"  src='{% static "images/logo.png" %}'>
+			<ul class="actions">
+				<li><a href="#" class="button special">Sign Up</a></li>
+				<li><a href="#" class="button">Learn More</a></li>
+			</ul>
+		</section>
+
+	<!-- Main -->
+		<section id="main" class="container">
+
+			<section class="box special">
+				<header class="major">
+					<h2>Student Portfolio Management</h2>
+					<p id="major-p">The Ohio University Student Equity Management Group is a student organization that manages an equity portfolio of $4.7 million of the university’s assets under a concentrated portfolio strategy. <br><br> The Group seeks to use the management of the equity portfolio as a common purpose under which we seek to provide our members with the required skills and knowledge for placement into highly competitive internships and full-time positions.</p>
+				</header>
+				<span class="image featured"><img src='{% static "images/bull.jpg" %}' alt="" /></span>
+			</section>
+
+			<section class="box special features">
+				<div class="features-row">
+					<section>
+						<span class="icon major fa-bullhorn accent2"></span>
+						<h3>About</h3>
+						<p>OU Student Equity Management Group manages an equity portfolio of roughly $4.7 million of the university's assets under a concentrated portfolio strategy.</p>
+					</section>
+					<section>
+						<span class="icon major fa-area-chart accent2"></span>
+						<h3>Performance</h3>
+						<p>OUSEMG measures our performance by constantly evaluating our ability to fulfill our three goals: adding value to our members, adding value to our university, adding value to our alumni.</p>
+					</section>
+				</div>
+				<div class="features-row">
+					<section>
+						<span class="icon major fa-users accent2"></span>
+						<h3>Members</h3>
+						<p>Our members receive the skills necessary to gain employment with many of the most respected firms across the financial services industry and beyond. We measure our performance in this area by seeking to achieve 100% senior placement by graduation.</p>
+					</section>
+					<section>
+						<span class="icon major fa-envelope-o accent2"></span>
+						<h3>Contact</h3>
+						<p>Interested in joining? We accept new applicants for our internship program every semester. Sign up now for the Fall 2016 semester. The group is open to all colleges and majors at Ohio University.</p>
+					</section>
+				</div>
+			</section>
+
+			<div class="row">
+				<div class="6u 12u(narrower)">
+
+					<section class="box special">
+						<span class="image featured"><img style="height: 237px;" src='{% static "images/post-pic.jpg" %}' alt="" /></span>
+						<h3>The 4.8 million dollar students</h3>
+						<p>Normally, when you meet a group of students at a bar, you don’t expect them to be the sole managers of close to $4.8 million and to be damn good at it too.</p>
+						<ul class="actions">
+							<li><a target="_blank" href="http://www.thepostathens.com/news/the-million-dollar-students/article_b2fdd40e-443d-11e4-ba80-0017a43b2370.html" class="button alt">Read More</a></li>
+						</ul>
+					</section>
+
+				</div>
+				<div class="6u 12u(narrower)">
+
+					<section class="box special">
+						<span class="image featured"><img src='{% static "images/group-old.jpg" %}' alt="" /></span>
+						<h3>Our assets are our people</h3>
+						<p>The opportunities are endless. You make the most of your time here. Whatever area of business you’re excited about, you can find an organization… </p>
+						<ul class="actions">
+							<li><a target="_blank" href="http://business.ohio.edu/academics/selective-programs/student-equity-management/" class="button alt">Read More</a></li>
+						</ul>
+					</section>
+
+				</div>
+			</div>
+
+		</section>
+
+	<!-- CTA -->
+		<section id="cta">
+
+			<h2>Sign up for Fall 2016 Internship</h2>
+			<p>send us your email and we will be in touch about applying in the fall</p>
+
+			<form>
+				<div class="row uniform 50%">
+					<div class="8u 12u(mobilep)">
+						<input type="email" name="email" id="email" placeholder="Email Address" />
+					</div>
+					<div class="4u 12u(mobilep)">
+						<input type="submit" value="Sign Up" class="fit" />
+					</div>
+				</div>
+			</form>
+
+		</section>
+
+	{% include 'footer.html' %}
+</div>
+
+
+
+
+{% endblock content %}

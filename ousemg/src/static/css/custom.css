@@ -1,0 +1,24 @@
+#banner-logo{
+	padding: 2em;
+	height: 100%;
+}
+
+#white-logo{
+	height: 90%;
+	padding: 5px;
+	margin-left: 1.5em;
+}
+
+#major-p{
+	text-align: left !important;
+}
+
+
+.member-box{
+	border: 1px solid #ccc;
+}
+
+
+.gen-header{
+	background: #444 !important;
+}

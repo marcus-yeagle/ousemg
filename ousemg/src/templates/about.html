@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block content %}
+<div id="page-wrapper">
+
+	{% include 'header.html' %}
+
+	<!-- Main -->
+		<section id="main" class="container">
+			<header>
+				<h2>About</h2>
+				<p>The best group on campus.</p>
+			</header>
+			<div class="box">
+				<span class="image featured"><img src='{% static "images/Ohio-University.jpg" %}' alt="" /></span>
+				<p>The Ohio University Student Equity Management Group manages an equity portfolio of roughly $4.7 million (4/2014) of the university's assets under a concentrated portfolio strategy. It is directed at generating consistent risk-adjusted returns in excess of broader equity benchmarks.The Group, founded in late 2001, was allocated its first funds in March of 2002. Since inception, OUSEMG has generated approximately $300,000 (06/2008) in capital gains and $47,104 of dividend income, which supports scholarships, research grants, and other initiatives of the Ohio University Foundation.</p>
+				<div class="row">
+					<div class="6u 12u(mobilep)">
+						<h3>Our Mission</h3>
+						<p>OUSEMG seeks to cultivate a highly engaging academic society and culture that challenges its members in areas of advanced financial topics. Further, the Group seeks to leverage its investment directive to pursue value-adding activities directed at the university, its members, and its alumni.</p>
+					</div>
+					<div class="6u 12u(mobilep)">
+						<h3>Our Vision</h3>
+						<p>The Group seeks to become a nationally recognized and respected program for developing members’ analytical and professional skill sets and for placing graduates in highly competitive, innovative and demanding areas of the financial industry.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	{% include 'footer.html' %}
+
+</div>
+
+{% endblock content %}

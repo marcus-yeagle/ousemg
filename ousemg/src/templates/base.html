@@ -1,0 +1,29 @@
+{% load staticfiles %}
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>OUSEMG</title>
+	
+	<link rel="stylesheet" type="text/css" href='{% static "css/main.css" %}'>
+	<link rel="stylesheet" type="text/css" href='{% static "css/custom.css" %}' />
+
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+
+{% block content %}
+
+{% endblock content %}
+	
+</body>
+
+<!-- Scripts -->
+<script src='{% static "js/jquery.min.js" %}'></script>
+<script src='{% static "js/jquery.dropotron.min.js" %}'></script>
+<script src='{% static "js/jquery.scrollgress.min.js" %}'></script>
+<script src='{% static "js/skel.min.js" %}'></script>
+<script src='{% static "js/util.js" %}'></script>
+<script src='{% static "js/main.js" %}'></script>
+
+</html>
