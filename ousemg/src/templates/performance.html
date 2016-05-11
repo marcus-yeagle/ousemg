@@ -1,112 +1,57 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>OUSEMG</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" type="text/css" href="assets/css/custom.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-	</head>
-	<body>
-		<div id="page-wrapper">
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block content %}
+<div id="page-wrapper">
 
-			<!-- Header -->
-				<header id="header">
-					<a href="/"><img id="white-logo" src="images/logo-white.png"></a>
-					<nav id="nav">
-						<ul>
-							<li>
-								<a href="#" class="icon fa-angle-down">Menu</a>
-								<ul>
-									<li><a href="about.html">about</a></li>
-									<li><a href="performance.html">performance</a></li>
-									<li><a href="elements.html">elements</a></li>
-									<li>
-										<a href="members.html">members</a>
-										<ul>
-											<li><a href="#">executive board</a></li>
-											<li><a href="#">head analysts</a></li>
-											<li><a href="#">analysts</a></li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</nav>
-				</header>
+	{% include 'header.html' %}
 
-
-			<!-- Main -->
-				<section id="main" class="container">
-					<header>
-						<h2>Performance</h2>
-						<p>It is what counts.</p>
-					</header>
-					<div class="box">
-						<div class="row">
-							<div class="6u 12u(mobilep)">
-								<p>The Ohio University Student Equity Management Group measures our performance by constantly evaluating our ability to fulfill our three goals:</p>
-								<ol>
-									<li>Adding value to our members</li>
-									<li>Adding value to our university</li>
-									<li>Adding value to our alumni</li>
-								</ol>
-								<p>Below is a summary of our current performance when evaluated based on the aforementioned three goals.</p>
-							</div>
-
-							<div class="6u 12u(mobilep)">
-								<img width="100%" src="images/stock-market-board.jpg">
-							</div>
-						</div>
-						
+	<!-- Main -->
+		<section id="main" class="container">
+			<header>
+				<h2>Performance</h2>
+				<p>It is what counts.</p>
+			</header>
+			<div class="box">
+				<div class="row">
+					<div class="6u 12u(mobilep)">
+						<p>The Ohio University Student Equity Management Group measures our performance by constantly evaluating our ability to fulfill our three goals:</p>
+						<ol>
+							<li>Adding value to our members</li>
+							<li>Adding value to our university</li>
+							<li>Adding value to our alumni</li>
+						</ol>
+						<p>Below is a summary of our current performance when evaluated based on the aforementioned three goals.</p>
 					</div>
 
-					<div class="box">
-						<span class="image featured"><img src="images/firms.png" alt="" /></span>
-						<h3>Adding Value to our Members</h3>
-						<p>We seek to add value to our members by providing them with the skills necessary to gain employment with many of the most respected firms across the financial services industry and beyond. We measure our performance in this area by seeking to achieve 100% senior placement by graduation. We have had great success in placing members in such industries as investment banking, corporate banking, corporate finance, sales and trading and public accounting. Below are some of the firms that have hired our members in the past.</p>
+					<div class="6u 12u(mobilep)">
+						<img width="100%" src='{% static "images/stock-market-board.jpg" %}'>
 					</div>
+				</div>
+				
+			</div>
 
-					<div class="box">
-						<span class="image featured"><img src="images/chart.png" alt="" /></span>
-						<h3>Adding Value to our University</h3>
-						<p>The Group was founded in late 2001 and was allocated its first funds in March of 2002. The Group received an additional allocation of funds in June of 2011 due to their outstanding performance over the previous 9 years. For fiscal year 2013, the fund has generated approximately $300,000 in capital gains and $38,214 of dividend income, which supports scholarships, research grants, and other initiatives of the Ohio University Foundation.</p>
-					</div>
+			<div class="box">
+				<span class="image featured"><img src='{% static "images/firms.png" %}' alt="" /></span>
+				<h3>Adding Value to our Members</h3>
+				<p>We seek to add value to our members by providing them with the skills necessary to gain employment with many of the most respected firms across the financial services industry and beyond. We measure our performance in this area by seeking to achieve 100% senior placement by graduation. We have had great success in placing members in such industries as investment banking, corporate banking, corporate finance, sales and trading and public accounting. Below are some of the firms that have hired our members in the past.</p>
+			</div>
 
-					<div class="box">
-						<span class="image featured"><img src="images/Alumni.png" alt="" /></span>
-						<h3>Adding Value to our Alumni</h3>
-						<p>We seek to add value to our alumni by establishing and maintaining a society of peers, whom share a profound connection through their OUSEMG experience. We strive to achieve this goal by conducting semi-weekly conference calls with alumni, arranging alumni networking trips, coordinating networking events during homecoming weekend and holding our annual OUSEMG banquet. Our alumni base is very strong and expansive with members spread throughout the United States and the world.</p>
-					</div>
-				</section>
+			<div class="box">
+				<span class="image featured"><img src='{% static "images/chart.png" %}' alt="" /></span>
+				<h3>Adding Value to our University</h3>
+				<p>The Group was founded in late 2001 and was allocated its first funds in March of 2002. The Group received an additional allocation of funds in June of 2011 due to their outstanding performance over the previous 9 years. For fiscal year 2013, the fund has generated approximately $300,000 in capital gains and $38,214 of dividend income, which supports scholarships, research grants, and other initiatives of the Ohio University Foundation.</p>
+			</div>
 
-			<!-- Footer -->
-				<footer id="footer">
-					<ul class="icons">
-						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
-						<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-						<li><a href="#" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
-					</ul>
-					<ul class="copyright">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-				</footer>
+			<div class="box">
+				<span class="image featured"><img src='{% static "images/Alumni.png" %}' alt="" /></span>
+				<h3>Adding Value to our Alumni</h3>
+				<p>We seek to add value to our alumni by establishing and maintaining a society of peers, whom share a profound connection through their OUSEMG experience. We strive to achieve this goal by conducting semi-weekly conference calls with alumni, arranging alumni networking trips, coordinating networking events during homecoming weekend and holding our annual OUSEMG banquet. Our alumni base is very strong and expansive with members spread throughout the United States and the world.</p>
+			</div>
+		</section>
 
-		</div>
+	{% include 'footer.html' %}
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/jquery.scrollgress.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
+</div>
 
-	</body>
-</html>
+
+{% endblock content %}

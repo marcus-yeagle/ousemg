@@ -126,7 +126,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
     #'var/www/static/',
@@ -139,3 +138,8 @@ MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR) , "media_cdn")
 
 
 
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'ousemgboard@gmail.com'
+EMAIL_HOST_PASSWORD = 'woodby.1804'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True

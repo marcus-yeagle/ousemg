@@ -23,8 +23,9 @@ from . import views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^members/', include("members.urls", namespace='members')),
-    url(r'^$', views.HomeView.as_view(), name="home"),
+    url(r'^$', views.HomeView, name="home"),
     url(r'^about/', views.AboutView.as_view(), name="about"),
+    url(r'^performance/', views.PerformanceView.as_view(), name="performance"),
 ]
 
 if settings.DEBUG:

@@ -10,9 +10,12 @@
 		<section id="banner">
 			<img id="banner-logo"  src='{% static "images/logo.png" %}'>
 			<ul class="actions">
-				<li><a href="#" class="button special">Sign Up</a></li>
-				<li><a href="#" class="button">Learn More</a></li>
+				<li><a href="#cta" class="button special">Sign Up</a></li>
+				<li><a href="/about/" class="button">Learn More</a></li>
 			</ul>
+			{% for message in messages %}
+			<h3>{{ message }}</h3>
+			{% endfor %}
 		</section>
 
 	<!-- Main -->
@@ -88,6 +91,12 @@
 			<h2>Sign up for Fall 2016 Internship</h2>
 			<p>send us your email and we will be in touch about applying in the fall</p>
 
+			<form action="" method="post">
+			{% csrf_token %}
+    			{{ form }}
+    			<input type="submit" value="Submit" />
+			</form>
+			
 			<form>
 				<div class="row uniform 50%">
 					<div class="8u 12u(mobilep)">

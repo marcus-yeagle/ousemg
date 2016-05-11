@@ -66,9 +66,14 @@ def members_delete(request, id=None):
 
 
 def members_list(request):
-	queryset = Member.objects.all()
+	board_mems = Member.objects.filter(group_status='Board')
+	head_mems = Member.objects.filter(group_status='Head')
+	anal_mems = Member.objects.filter(group_status='Analyst')
+
 	context = {
-		"member_list":queryset,
+		"board_members":board_mems,
+		"head_analyst":head_mems,
+		"analyst":anal_mems,
 		"title":"list",
 	}
 

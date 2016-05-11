@@ -17,4 +17,8 @@ class Member(models.Model):
 	def get_absolute_url(self):
 		return reverse('members:detail', kwargs={"id":self.id})
 
+
+class Intern(models.Model):
+	email = models.EmailField(max_length=50)
+
 	
