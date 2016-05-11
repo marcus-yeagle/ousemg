@@ -517,9 +517,6 @@
 			]
 		]
 	},
-	"buffers":
-	[
-	],
 	"build_system": "",
 	"command_palette":
 	{
@@ -835,14 +832,6 @@
 		"whole_word": false,
 		"wrap": true
 	},
-	"groups":
-	[
-		{
-			"sheets":
-			[
-			]
-		}
-	],
 	"incremental_find":
 	{
 		"height": 23.0
@@ -878,7 +867,6 @@
 	{
 		"height": 0.0
 	},
-	"project": "ousemg.sublime-project",
 	"replace":
 	{
 		"height": 42.0
