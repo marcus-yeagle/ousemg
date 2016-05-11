@@ -76,16 +76,16 @@ WSGI_APPLICATION = 'ousemg.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.9/ref/settings/#databases
 
-# DATABASES = {
-#         'default': {
-#             'ENGINE': 'django.db.backends.postgresql_psycopg2', 
-#             'NAME': 'ousemg',                                   
-#             'USER': 'postgres',
-#             'PASSWORD': 'j8b7088Q!',
-#             'HOST': '',                                         
-#             'PORT': '',                      
-#         }
-#     }
+DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql_psycopg2', 
+            'NAME': 'ousemg',                                   
+            'USER': 'postgres',
+            'PASSWORD': 'j8b7088Q!',
+            'HOST': '',                                         
+            'PORT': '',                      
+        }
+    }
 
 DATABASES['default'] =   dj_database_url.config(default='postgres://mcifpdejtkixfp:YSiD2yPqa7Q-yyVO6AkNkTcVia@ec2-54-243-249-149.compute-1.amazonaws.com:5432/depf0dvnup3223')
 
