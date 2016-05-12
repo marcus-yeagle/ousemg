@@ -79,7 +79,7 @@ WSGI_APPLICATION = 'ousemg.wsgi.application'
 DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.postgresql_psycopg2', 
-            'NAME': 'ousemg',                                   
+            'NAME': 'depf0dvnup3223',                                   
             'USER': 'mcifpdejtkixfp',
             'PASSWORD': 'YSiD2yPqa7Q-yyVO6AkNkTcVia',
             'HOST': 'ec2-54-243-249-149.compute-1.amazonaws.com',                                         
