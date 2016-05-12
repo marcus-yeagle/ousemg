@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'members',
+		'storages',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -144,3 +145,16 @@ EMAIL_HOST_USER = 'ousemgboard@gmail.com'
 EMAIL_HOST_PASSWORD = 'woodby.1804'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
+
+AWS_ACCESS_KEY_ID = 'AKIAIHX4J3C7GGOQVNFQ' 
+AWS_SECRET_ACCESS_KEY = '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'
+AWS_STORAGE_BUCKET_NAME = 'ousemg'
+AWS_PRELOAD_METADATA = True
+
+S3_URL = 'http://%s.s3.amazonaws.com/' % AWS_STORAGE_BUCKET_NAME
+
+MEDIA_ROOT = '/media/'
+MEDIA_URL = S3_URL + MEDIA_ROOT
+
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
