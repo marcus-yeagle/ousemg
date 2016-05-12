@@ -87,7 +87,7 @@ DATABASES = {
         }
     }
 
-DATABASES['default'] =   dj_database_url.config(default='postgres://mcifpdejtkixfp:YSiD2yPqa7Q-yyVO6AkNkTcVia@ec2-54-243-249-149.compute-1.amazonaws.com:5432/depf0dvnup3223')
+# DATABASES['default'] =   dj_database_url.config(default='postgres://mcifpdejtkixfp:YSiD2yPqa7Q-yyVO6AkNkTcVia@ec2-54-243-249-149.compute-1.amazonaws.com:5432/depf0dvnup3223')
 
 
 
@@ -138,8 +138,6 @@ STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR) , "static_cdn")
 
 MEDIA_URL = "/media/"
 MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR) , "media_cdn")
-
-
 
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'ousemgboard@gmail.com'
