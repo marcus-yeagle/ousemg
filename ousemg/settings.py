@@ -13,9 +13,12 @@ https://docs.djangoproject.com/en/1.9/ref/settings/
 import os
 import dj_database_url
 
+on_heroku = False
+if 'ONLINE_STATUS' in os.environ:
+	on_heroku = True
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
-
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.9/howto/deployment/checklist/
@@ -77,7 +80,9 @@ WSGI_APPLICATION = 'ousemg.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.9/ref/settings/#databases
 
-DATABASES = {
+if on_heroku:
+	print('on heroku')
+	DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.postgresql_psycopg2', 
             'NAME': 'depf0dvnup3223',                                   
@@ -87,6 +92,19 @@ DATABASES = {
             'PORT': '5432',                      
         }
     }
+else:
+	print('local machine')
+	DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql_psycopg2', 
+            'NAME': 'ousemg',                                   
+            'USER': 'postgres',
+            'PASSWORD': 'j8b7088Q!',
+            'HOST': '',                                         
+            'PORT': '',                      
+        }
+    }
+	print(DATABASES)
 
 # DATABASES['default'] =   dj_database_url.config(default='postgres://mcifpdejtkixfp:YSiD2yPqa7Q-yyVO6AkNkTcVia@ec2-54-243-249-149.compute-1.amazonaws.com:5432/depf0dvnup3223')
 
