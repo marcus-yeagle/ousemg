@@ -44,15 +44,17 @@
 
 					<div class="box">
 						<div class="row">
+							{% for head in head_mems %}
 							<div class="4u 12u(mobilep)">
 								<div class="box special member-box">
-									<span class="image fit"><img src="images/members/jasonM.JPG" alt="" /></span>
-									<h3>Jason Makishi</h3>
+									<span class="image fit"><img src="{{head.pic.url}}" alt="" /></span>
+									<h3>{{ head.first_name }}&nbsp;{{ head.last_name }}</h3>
 									<ul class="actions">
-										<li><a target="_blank" href="http://business.ohio.edu/academics/selective-programs/student-equity-management/" class="button alt">LinkedIn</a></li>
+										<li>{{ head.major }} | {{ head.year }}</li>
 									</ul>
 								</div>
 							</div>
+							{% endfor %}
 						</div>
 					</div>
 
@@ -64,15 +66,17 @@
 
 					<div class="box">
 						<div class="row">
+							{% for analyst in anal_mems %}
 							<div class="4u 12u(mobilep)">
 								<div class="box special member-box">
-									<span class="image fit"><img src="images/members/jasonM.JPG" alt="" /></span>
-									<h3>Jason Makishi</h3>
+									<span class="image fit"><img src="{{analyst.pic.url}}" alt="" /></span>
+									<h3>{{ analyst.first_name }}&nbsp;{{ analyst.last_name }}</h3>
 									<ul class="actions">
-										<li><a target="_blank" href="http://business.ohio.edu/academics/selective-programs/student-equity-management/" class="button alt">LinkedIn</a></li>
+										<li>{{ analyst.major }} | {{ analyst.year }}</li>
 									</ul>
 								</div>
-							</div>
+							</div>analyst
+							{% endfor %}
 						</div>
 					</div>
 
