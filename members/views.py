@@ -74,7 +74,7 @@ def members_list(request):
 		"board_members":board_mems,
 		"head_analyst":head_mems,
 		"analyst":anal_mems,
-		"title":"list",
+		"title":"Members",
 	}
 
 	return render(request, "members_list.html", context)
