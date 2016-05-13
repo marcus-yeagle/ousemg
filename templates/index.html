@@ -59,7 +59,7 @@
 			<div class="row">
 				<div class="6u 12u(narrower)">
 
-					<section class="box special">
+					<section id="news-container" class="box special">
 						<span class="image featured"><img style="height: 237px;" src='{% static "images/post-pic.jpg" %}' alt="" /></span>
 						<h3>The 4.8 million dollar students</h3>
 						<p>Normally, when you meet a group of students at a bar, you don’t expect them to be the sole managers of close to $4.8 million and to be damn good at it too.</p>
@@ -71,7 +71,7 @@
 				</div>
 				<div class="6u 12u(narrower)">
 
-					<section class="box special">
+					<section id="news-container" class="box special">
 						<span class="image featured"><img src='{% static "images/group-old.jpg" %}' alt="" /></span>
 						<h3>Our assets are our people</h3>
 						<p>The opportunities are endless. You make the most of your time here. Whatever area of business you’re excited about, you can find an organization… </p>
@@ -90,17 +90,12 @@
 
 			<h2>Sign up for Fall 2016 Internship</h2>
 			<p>send us your email and we will be in touch about applying in the fall</p>
-
+			
 			<form action="" method="post">
 			{% csrf_token %}
-    			{{ form }}
-    			<input type="submit" value="Submit" />
-			</form>
-			
-			<form>
 				<div class="row uniform 50%">
 					<div class="8u 12u(mobilep)">
-						<input type="email" name="email" id="email" placeholder="Email Address" />
+						{{ form.email }}
 					</div>
 					<div class="4u 12u(mobilep)">
 						<input type="submit" value="Sign Up" class="fit" />

@@ -22,3 +22,7 @@
 .gen-header{
 	background: #444 !important;
 }
+
+#news-container{
+	height: 32rem;
+}
