@@ -1,6 +1,6 @@
-# Heroku Django Starter Template
+# Ohio University SEMG
 
-An utterly fantastic project starter template for Django 1.9.
+Repo to house the OUSEMG website 
 
 ## Features
 
